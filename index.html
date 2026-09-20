@@ -397,7 +397,25 @@
       30% { transform: rotate(-4deg); }
       70% { transform: rotate(4deg); }
     }
-    footer { padding: 28px 0; color: #646a75; background: var(--white); text-align: center; font-size: .78rem; }
+    footer {
+      padding: 28px 0 24px;
+      color: #646a75;
+      background: var(--white);
+      text-align: center;
+      font-size: .78rem;
+    }
+    .footer-main { margin: 0; }
+    .footer-credit {
+      margin: 8px 0 0;
+      font-size: .72rem;
+      color: #8a9099;
+    }
+    .footer-credit a {
+      color: var(--blue);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .footer-credit a:hover { text-decoration: underline; }
 
     @media (max-width: 1120px) and (min-width: 821px) {
       .wrap { width: min(100% - 48px, 1040px); }
@@ -625,7 +643,13 @@
   </main>
 
   <footer>
-    <div class="wrap">Gangi Dental Care · Juntos hacemos historia. Juntos creamos más sonrisas saludables.</div>
+    <div class="wrap">
+      <p class="footer-main">Gangi Dental Care · Juntos hacemos historia. Juntos creamos más sonrisas saludables.</p>
+      <p class="footer-credit">
+        Developed by
+        <a href="https://msmpsolutions.com" target="_blank" rel="noopener noreferrer">msmpsolutions.com</a>
+      </p>
+    </div>
   </footer>
 
   <script src="code.js"></script>
